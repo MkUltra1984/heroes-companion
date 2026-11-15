@@ -1,0 +1,1069 @@
+{
+ "as_of": "2026-11-15",
+ "game_version": "10.11.0",
+ "how_to_read": "One card per currency or item. `verified` true means the use and the sources rest on a cited page or on the project's own reward data. `basis` on best_use and do_not: 'experience' is the author's judgement as a player, 'source' is taken from a cited page. null in `numbers` means the value was not verified and must not be printed. `paid_sources` are Feh Pass or shop sources and must be shown apart from free ones (plan decision 9).",
+ "not_covered": [
+  "R&R Affinity (Aether Resort)",
+  "Midgard Gems (Mjölnir's Strike)",
+  "event tickets such as Battle Flags, Forma Torches and Conquest Lances",
+  "First Summon Tickets (explained in summon_rules.json)"
+ ],
+ "cards": [
+  {
+   "id": "orbs",
+   "name": "Orbs",
+   "what": "Pay for summoning. Also accepted for stamina, Arena tries, revives, castle upgrades and barracks space.",
+   "from": [
+    "Story maps and Paralogues, first clear per difficulty (once)",
+    "Monthly, daily and event quests",
+    "Arena: 1 orb for the first win of each season, more in the tier reward",
+    "Log-in bonuses",
+    "Tempest Trials score rewards (monthly)"
+   ],
+   "best_use": {
+    "text": "Summoning, on a banner where you can reach the free pick or where one color holds several heroes you lack.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not pay orbs for stamina, Dueling Swords or a revive. Each has a free item.",
+    "basis": "experience"
+   },
+   "numbers": {
+    "circle_of_five": 20,
+    "summon_costs": [
+     5,
+     4,
+     4,
+     4,
+     3
+    ],
+    "forty_summons_max": 155,
+    "quests_november_2026": 48,
+    "of_which_feh_pass": 10,
+    "barracks_5_slots": 1
+   },
+   "paid_sources": "Feh Pass quests: 5 orbs on the 10th and 25th (wiki, 2022; the November 2026 quest data shows two sets of 5).",
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Orb",
+     "url": "https://feheroes.fandom.com/wiki/Orb",
+     "date": "2022-04-13",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Arena (rewards)",
+     "url": "https://feheroes.fandom.com/wiki/Arena",
+     "date": "2024-08-02",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Project data, tools/cache/QuestRewards.json: rewards of the quests running in November 2026",
+     "url": null,
+     "date": "2026-11-15",
+     "date_kind": "data date"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, List of items (item texts)",
+     "url": "https://feheroes.fandom.com/wiki/List_of_items",
+     "date": "2026-10-21",
+     "date_kind": "last revision"
+    }
+   ],
+   "note": "Sources and costs verified. The Tempest Trials line rests on a 2020 Game8 page and on experience: the cached reward table has no orb rows yet. Barracks price is from the 2022 wiki page."
+  },
+  {
+   "id": "hero_feathers",
+   "name": "Hero Feathers",
+   "what": "Raise a hero's rarity (Unlock Potential). 4 to 5 stars costs 20,000; 3 to 4 stars costs 2,000.",
+   "from": [
+    "Arena, every week, by score and tier",
+    "Quests (6,800 in the November 2026 quests)",
+    "Events",
+    "Sending home heroes you do not need"
+   ],
+   "best_use": {
+    "text": "5 stars for heroes of the 3 to 4-star pool that you field, then merges of those heroes.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not promote a hero just to pass on one skill unless the skill needs 5 stars.",
+    "basis": "experience"
+   },
+   "numbers": {
+    "to_5_stars": 20000,
+    "to_4_stars": 2000,
+    "quests_november_2026": 6800
+   },
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Hero Feather",
+     "url": "https://feheroes.fandom.com/wiki/Hero_Feather",
+     "date": "2019-06-17",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Arena (rewards)",
+     "url": "https://feheroes.fandom.com/wiki/Arena",
+     "date": "2024-08-02",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Project data, tools/cache/QuestRewards.json: rewards of the quests running in November 2026",
+     "url": null,
+     "date": "2026-11-15",
+     "date_kind": "data date"
+    }
+   ],
+   "note": "The costs are from a 2019 wiki page and match the game as played in 2026 (experience)."
+  },
+  {
+   "id": "heroic_grails",
+   "name": "Heroic Grails",
+   "what": "Summon copies of heroes from Grand Hero Battles and Tempest Trials (Allies, Use Heroic Grails).",
+   "from": [
+    "Aether Raids: 20 on the third day played each season, plus tier and rank rewards every week",
+    "Quests (100 in the November 2026 quests)",
+    "First visit to Use Heroic Grails: 200, once"
+   ],
+   "best_use": {
+    "text": "One hero to +10 before you start a second. Eleven copies cost 3,700.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not spread Grails over many heroes: the first copies are cheap, the last cost 500 each.",
+    "basis": "experience"
+   },
+   "numbers": {
+    "ladder_4_star": [
+     100,
+     150,
+     200,
+     250,
+     300,
+     350,
+     400,
+     450,
+     500
+    ],
+    "then_each": 500,
+    "max_copies_4_star": 20,
+    "eleven_copies_total": 3700,
+    "ladder_5_star": [
+     500,
+     1000
+    ],
+    "max_copies_5_star": 2
+   },
+   "paid_sources": "Feh Pass quests: 50 per set (wiki, 2022).",
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Use Heroic Grails (price ladder)",
+     "url": "https://feheroes.fandom.com/wiki/Use_Heroic_Grails",
+     "date": "2026-11-05",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Aether Raids (daily, rank and tier rewards)",
+     "url": "https://feheroes.fandom.com/wiki/Aether_Raids",
+     "date": "2025-01-10",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Project data, tools/cache/QuestRewards.json: rewards of the quests running in November 2026",
+     "url": null,
+     "date": "2026-11-15",
+     "date_kind": "data date"
+    }
+   ],
+   "note": null
+  },
+  {
+   "id": "dragonflowers",
+   "name": "Dragonflowers",
+   "what": "Add stats to a hero. One kind per movement type: (I) infantry, (A) armored, (C) cavalry, (F) flying. Five steps give +1 to every stat. They do not count for Arena scoring or matchmaking.",
+   "from": [
+    "Heroic Ordeals: one map for every hero you own (once per hero)",
+    "Aether Raids: tier and rank rewards every week",
+    "Allegiance Battles",
+    "Quests (40 Dragonflowers (I) in the November 2026 quests)"
+   ],
+   "best_use": {
+    "text": "The first five steps on each hero of your main teams: they are the cheapest and give +1 to all stats.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not pour them into a hero you field in one mode only.",
+    "basis": "experience"
+   },
+   "numbers": {
+    "stats_per_5_steps": 1,
+    "cap_per_hero": null,
+    "cost_per_step": null
+   },
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Use Dragonflowers",
+     "url": "https://feheroes.fandom.com/wiki/Use_Dragonflowers",
+     "date": "2025-10-27",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Official guide, Dragonflowers and Heroic Ordeals",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-2480.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Aether Raids (daily, rank and tier rewards)",
+     "url": "https://feheroes.fandom.com/wiki/Aether_Raids",
+     "date": "2025-01-10",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Project data, tools/cache/QuestRewards.json: rewards of the quests running in November 2026",
+     "url": null,
+     "date": "2026-11-15",
+     "date_kind": "data date"
+    }
+   ],
+   "note": "Caps and costs are null: the wiki text (5, 10, 15 or 20 steps by release date) and the official guide (5 or 10) are both behind the game. The hero's Use Dragonflowers screen shows its cap. Each step costs more than the last (wiki)."
+  },
+  {
+   "id": "divine_codes_part",
+   "name": "Divine Code: Part 7",
+   "what": "Compile Combat Manuals: a manual works like a copy of a hero for merging or passing on skills. The number changes every March; Part 7 began on 5 March 2026.",
+   "from": [
+    "Tier rewards in Arena and Mjölnir's Strike",
+    "Rank rewards in Aether Raids",
+    "Daily rewards of Forging Bonds revivals",
+    "Limited Hero Battles",
+    "Quests (240 in the November 2026 quests)",
+    "Arena: 80 for the third win in a row, once per season"
+   ],
+   "best_use": {
+    "text": "Follow one path to the manual you need for a merge project or a skill.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not open many paths at once: a half-finished path gives nothing.",
+    "basis": "experience"
+   },
+   "numbers": {},
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Divine Codes",
+     "url": "https://feheroes.fandom.com/wiki/Divine_Codes",
+     "date": "2026-04-09",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Official guide, Divine Codes",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3330.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Arena (rewards)",
+     "url": "https://feheroes.fandom.com/wiki/Arena",
+     "date": "2024-08-02",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Project data, tools/cache/QuestRewards.json: rewards of the quests running in November 2026",
+     "url": null,
+     "date": "2026-11-15",
+     "date_kind": "data date"
+    }
+   ],
+   "note": "Whether older Part numbers can still be spent was not checked."
+  },
+  {
+   "id": "divine_codes_ephemera",
+   "name": "Divine Code: Ephemera",
+   "what": "Compile limited-time Combat Manuals. Item text: 'Once time expires, these codes will be lost.' Each number is handed out for about six weeks (Ephemera 1 from January to mid-February, and so on).",
+   "from": [
+    "Event rewards. The wiki names Forging Bonds, Grand Conquests and Hall of Forms; the official guide names Tempest Trials and Lost Lore."
+   ],
+   "best_use": {
+    "text": "Spend them before anything else. They are the only currency here that expires.",
+    "basis": "source"
+   },
+   "do_not": {
+    "text": "Do not save them for a later month.",
+    "basis": "experience"
+   },
+   "numbers": {},
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Divine Codes",
+     "url": "https://feheroes.fandom.com/wiki/Divine_Codes",
+     "date": "2026-04-09",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Official guide, Divine Codes",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3330.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    }
+   ],
+   "note": "The two sources name different events. Both are shown; take the list from the reward tables when they are downloaded. The exact last day to spend a number is shown in the game, not in these sources."
+  },
+  {
+   "id": "refining_stones",
+   "name": "Refining Stones",
+   "what": "Refine common (inheritable) weapons in the Weapon Refinery, together with Arena Medals. Each stone spent gives one Divine Dew.",
+   "from": [
+    "Arena and Arena Assault season rewards",
+    "Quests (8 in the November 2026 quests)",
+    "Events"
+   ],
+   "best_use": {
+    "text": "Refine common weapons you use anyway: every stone comes back as Dew.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not hoard them: unspent stones make no Dew.",
+    "basis": "experience"
+   },
+   "numbers": {
+    "dew_per_stone": 1,
+    "refine_cost": null
+   },
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Weapon Refinery",
+     "url": "https://feheroes.fandom.com/wiki/Weapon_Refinery",
+     "date": "2025-11-01",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Divine Dew (one Dew per stone)",
+     "url": "https://feheroes.fandom.com/wiki/Divine_Dew",
+     "date": "2019-02-08",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Official guide, Gather Arena Medals and Refine Weapons",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-2280.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Project data, tools/cache/QuestRewards.json: rewards of the quests running in November 2026",
+     "url": null,
+     "date": "2026-11-15",
+     "date_kind": "data date"
+    }
+   ],
+   "note": "Refine costs are null: not on the pages read."
+  },
+  {
+   "id": "divine_dew",
+   "name": "Divine Dew",
+   "what": "Refine personal (unique) weapons, together with Arena Medals.",
+   "from": [
+    "Spending Refining Stones (1 Dew per stone)",
+    "Some Blessed Gardens maps and Rival Domains",
+    "Quests (70 in the November 2026 quests)"
+   ],
+   "best_use": {
+    "text": "Personal weapon refines for heroes in your teams. A refine often makes an old hero useful again.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not refine the weapon of a hero you will not field.",
+    "basis": "experience"
+   },
+   "numbers": {
+    "refine_cost": null
+   },
+   "paid_sources": "Feh Pass quests: 35 per set (wiki, 2022).",
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Weapon Refinery",
+     "url": "https://feheroes.fandom.com/wiki/Weapon_Refinery",
+     "date": "2025-11-01",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Divine Dew",
+     "url": "https://feheroes.fandom.com/wiki/Divine_Dew",
+     "date": "2019-02-08",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Official guide, Gather Arena Medals and Refine Weapons",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-2280.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Project data, tools/cache/QuestRewards.json: rewards of the quests running in November 2026",
+     "url": null,
+     "date": "2026-11-15",
+     "date_kind": "data date"
+    }
+   ],
+   "note": "The official guide calls Dew hard to earn and advises saving it for exclusive weapons."
+  },
+  {
+   "id": "arena_medals",
+   "name": "Arena Medals",
+   "what": "Second material for every weapon refine.",
+   "from": [
+    "Winning in the Arena (100 for the fourth win in a row, once per season)",
+    "Quests (300 in the November 2026 quests)"
+   ],
+   "best_use": {
+    "text": "Nothing to decide: they are spent with every refine.",
+    "basis": "source"
+   },
+   "do_not": {
+    "text": "Nothing to avoid.",
+    "basis": "experience"
+   },
+   "numbers": {},
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Arena Medal",
+     "url": "https://feheroes.fandom.com/wiki/Arena_Medal",
+     "date": "2019-02-08",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Arena (rewards)",
+     "url": "https://feheroes.fandom.com/wiki/Arena",
+     "date": "2024-08-02",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Official guide, Gather Arena Medals and Refine Weapons",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-2280.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Project data, tools/cache/QuestRewards.json: rewards of the quests running in November 2026",
+     "url": null,
+     "date": "2026-11-15",
+     "date_kind": "data date"
+    }
+   ],
+   "note": null
+  },
+  {
+   "id": "sacred_coins",
+   "name": "Sacred Coins",
+   "what": "Create and upgrade Sacred Seals in the Sacred Seal Forge, together with badges.",
+   "from": [
+    "Arena and Arena Assault",
+    "Tempest Trials",
+    "Voting Gauntlet",
+    "Grand Conquests",
+    "Quests"
+   ],
+   "best_use": {
+    "text": "Seals that several of your teams can share first.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not upgrade a seal you have no hero for.",
+    "basis": "experience"
+   },
+   "numbers": {
+    "seal_costs": null
+   },
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Sacred Coin",
+     "url": "https://feheroes.fandom.com/wiki/Sacred_Coin",
+     "date": "2022-04-13",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, List of items (item texts)",
+     "url": "https://feheroes.fandom.com/wiki/List_of_items",
+     "date": "2026-10-21",
+     "date_kind": "last revision"
+    }
+   ],
+   "note": "Sources are from a 2022 page. Seal costs are null: the only cost table found is from 2019."
+  },
+  {
+   "id": "trait_fruit",
+   "name": "Trait Fruit",
+   "what": "Change a hero's asset and flaw (Change Traits).",
+   "from": [
+    "Interval rewards in Resonant Battles",
+    "Tier rewards in Arena and Mjölnir's Strike",
+    "Friendship rewards in Forging Bonds"
+   ],
+   "best_use": {
+    "text": "Fix the flaw or set the best asset on a hero you field and will not merge soon.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not use them on a hero you are about to merge: the first merge removes the flaw.",
+    "basis": "experience"
+   },
+   "numbers": {
+    "cost_per_change": null
+   },
+   "paid_sources": null,
+   "verified": false,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Trait Fruit",
+     "url": "https://feheroes.fandom.com/wiki/Trait_Fruit",
+     "date": "2020-09-18",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, List of items (item texts)",
+     "url": "https://feheroes.fandom.com/wiki/List_of_items",
+     "date": "2026-10-21",
+     "date_kind": "last revision"
+    }
+   ],
+   "note": "The use is verified (item text, Oct 2026). The sources are from a 2020 page and were not confirmed for 2026. The cost per change was not sourced."
+  },
+  {
+   "id": "celestial_stones",
+   "name": "Celestial Stones",
+   "what": "Exchange for items in the Celestial Stone Shop. The shop's stock resets at intervals.",
+   "from": [
+    "One with every free pick after 40 summons"
+   ],
+   "best_use": {
+    "text": "Keep them until you need what the shop sells. They are not lost with time.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not summon past your plan just to earn one.",
+    "basis": "experience"
+   },
+   "numbers": {
+    "shop": null
+   },
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Official guide, Free 5-star Summon feature",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3490.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Official Feh Pass page",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Celestial Stone (shop list of 2022)",
+     "url": "https://feheroes.fandom.com/wiki/Celestial_Stone",
+     "date": "2022-12-18",
+     "date_kind": "last revision"
+    }
+   ],
+   "note": "Source and use verified from official pages. The shop list is null: the only list found is from 2022 (100 Trait Fruit for 4 stones, a Forma Soul for 3, 100 Dragonflowers for 1). Check the shop in the game."
+  },
+  {
+   "id": "blessings",
+   "name": "Blessings",
+   "what": "Confer an element on a hero (not on Legendary, Mythic or Chosen heroes). A blessed hero gets double SP, and stat boosts in the blessing's season when a matching Legendary or Mythic hero is on the team. Eight kinds: Fire, Water, Wind, Earth (Legendary), Light, Dark, Astra, Anima (Mythic). A blessing cannot be taken back; a new one overwrites the old.",
+   "from": [
+    "One with every Legendary or Mythic hero you summon",
+    "Aether Raids: Light or Dark and Astra or Anima blessings for playing on the first and fifth day of a season",
+    "Blessed Gardens, first clear: Fire, Water, Wind, Earth",
+    "Legendary and Mythic Hero Battles, first clear of the lowest difficulty",
+    "Tempest Trials at 12,500 points"
+   ],
+   "best_use": {
+    "text": "Bless the heroes that fight beside your Legendary and Mythic heroes in the same season.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not bless a hero without owning a Legendary or Mythic hero of that element.",
+    "basis": "experience"
+   },
+   "numbers": {},
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Confer Blessing",
+     "url": "https://feheroes.fandom.com/wiki/Confer_Blessing",
+     "date": "2025-12-06",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Official guide, Great Places to Get Blessings",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3130.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Aether Raids (daily, rank and tier rewards)",
+     "url": "https://feheroes.fandom.com/wiki/Aether_Raids",
+     "date": "2025-01-10",
+     "date_kind": "last revision"
+    }
+   ],
+   "note": null
+  },
+  {
+   "id": "forma_souls",
+   "name": "Forma Souls",
+   "what": "Keep a Forma unit from Hall of Forms as a real hero, with the skills it collected there.",
+   "from": [
+    "Paid Forma Soul packs",
+    "Celestial Stone Shop (3 stones in 2022)"
+   ],
+   "best_use": {
+    "text": "Only for a Forma whose skills you could not afford otherwise.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not use one before the Forma's skill set is finished.",
+    "basis": "experience"
+   },
+   "numbers": {},
+   "paid_sources": "Forma Soul packs in the shop.",
+   "verified": false,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Forma Soul",
+     "url": "https://feheroes.fandom.com/wiki/Forma_Soul",
+     "date": "2022-12-18",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, List of items (item texts)",
+     "url": "https://feheroes.fandom.com/wiki/List_of_items",
+     "date": "2026-10-21",
+     "date_kind": "last revision"
+    }
+   ],
+   "note": "Item text verified (Oct 2026). Sources are from a 2022 page and not confirmed for 2026."
+  },
+  {
+   "id": "ascendant_florets",
+   "name": "Ascendant Florets",
+   "what": "Give a hero a second asset (Ascend Traits).",
+   "from": [
+    "The first copy of each Ascended hero",
+    "Quests (2 in the November 2026 quests)"
+   ],
+   "best_use": {
+    "text": "On a hero you field in every mode.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Nothing is lost by waiting: they do not expire.",
+    "basis": "experience"
+   },
+   "numbers": {},
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Ascendant Floret",
+     "url": "https://feheroes.fandom.com/wiki/Ascendant_Floret",
+     "date": "2022-01-03",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, List of items (item texts)",
+     "url": "https://feheroes.fandom.com/wiki/List_of_items",
+     "date": "2026-10-21",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Project data, tools/cache/QuestRewards.json: rewards of the quests running in November 2026",
+     "url": null,
+     "date": "2026-11-15",
+     "date_kind": "data date"
+    }
+   ],
+   "note": null
+  },
+  {
+   "id": "aether_stones",
+   "name": "Aether Stones",
+   "what": "Build and improve structures in your Aether Raids keep, and buy the fifth and sixth team slot (300 each). Each stone spent gives one Heavenly Dew. Seasonal kinds (Spring, Summer, Fall, Frosty, SP) are lost when their period ends.",
+   "from": [
+    "Aether Raids: 45 on the second and fourth day played each season, plus the tier reward every week",
+    "Quests (320 in the November 2026 quests)",
+    "Aether Resort: 1 for every 10 R&R Affinity spent"
+   ],
+   "best_use": {
+    "text": "The Fortress and the Aether Amphorae and Fountain first, then the structures your defence uses.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not keep seasonal stones past their period.",
+    "basis": "experience"
+   },
+   "numbers": {},
+   "paid_sources": "Feh Pass quests: 120 per set (wiki, 2022).",
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Aether Stone",
+     "url": "https://feheroes.fandom.com/wiki/Aether_Stone",
+     "date": "2020-04-07",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Aether Raids (daily, rank and tier rewards)",
+     "url": "https://feheroes.fandom.com/wiki/Aether_Raids",
+     "date": "2025-01-10",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Aether Resort",
+     "url": "https://feheroes.fandom.com/wiki/Aether_Resort",
+     "date": "2026-09-12",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, List of items (item texts)",
+     "url": "https://feheroes.fandom.com/wiki/List_of_items",
+     "date": "2026-10-21",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Project data, tools/cache/QuestRewards.json: rewards of the quests running in November 2026",
+     "url": null,
+     "date": "2026-11-15",
+     "date_kind": "data date"
+    }
+   ],
+   "note": "The build order is experience."
+  },
+  {
+   "id": "heavenly_dew",
+   "name": "Heavenly Dew",
+   "what": "Strengthen Fortress (O), Fortress (D) and the resource structures in Aether Raids.",
+   "from": [
+    "Spending Aether Stones: 1 Heavenly Dew per stone"
+   ],
+   "best_use": {
+    "text": "Fortress levels: they raise the stats of your whole team or defence.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Nothing to avoid: it has no other use.",
+    "basis": "experience"
+   },
+   "numbers": {
+    "dew_per_aether_stone": 1
+   },
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Heavenly Dew",
+     "url": "https://feheroes.fandom.com/wiki/Heavenly_Dew",
+     "date": "2026-03-11",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, List of items (item texts)",
+     "url": "https://feheroes.fandom.com/wiki/List_of_items",
+     "date": "2026-10-21",
+     "date_kind": "last revision"
+    }
+   ],
+   "note": "This corrects round 1: Heavenly Dew is not spent in the Aether Resort."
+  },
+  {
+   "id": "dueling_crests",
+   "name": "Dueling Crests",
+   "what": "Restore all Dueling Swords, the tries for Arena.",
+   "from": [
+    "Quests (33 in the November 2026 quests)",
+    "Log-in bonuses"
+   ],
+   "best_use": {
+    "text": "Use them freely to finish your Arena run each week.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not pay an orb for Dueling Swords.",
+    "basis": "experience"
+   },
+   "numbers": {},
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, List of items (item texts)",
+     "url": "https://feheroes.fandom.com/wiki/List_of_items",
+     "date": "2026-10-21",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Dueling Crest",
+     "url": "https://feheroes.fandom.com/wiki/Dueling_Crest",
+     "date": "2019-07-08",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Project data, tools/cache/QuestRewards.json: rewards of the quests running in November 2026",
+     "url": null,
+     "date": "2026-11-15",
+     "date_kind": "data date"
+    }
+   ],
+   "note": null
+  },
+  {
+   "id": "stamina_potions",
+   "name": "Stamina Potions",
+   "what": "Restore 99 stamina.",
+   "from": [
+    "Quests (40 in the November 2026 quests)",
+    "Log-in bonuses"
+   ],
+   "best_use": {
+    "text": "Use them during Tempest Trials and other events that are played many times.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not pay an orb for stamina.",
+    "basis": "experience"
+   },
+   "numbers": {},
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, List of items (item texts)",
+     "url": "https://feheroes.fandom.com/wiki/List_of_items",
+     "date": "2026-10-21",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Stamina Potion",
+     "url": "https://feheroes.fandom.com/wiki/Stamina_Potion",
+     "date": "2020-10-04",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Project data, tools/cache/QuestRewards.json: rewards of the quests running in November 2026",
+     "url": null,
+     "date": "2026-11-15",
+     "date_kind": "data date"
+    }
+   ],
+   "note": null
+  },
+  {
+   "id": "lights_blessing",
+   "name": "Light's Blessing",
+   "what": "Used in battle: restores all allies' HP, movement and Specials, also after a defeat. Not allowed in Arena, Grand Hero Battles, Chain Challenges and Squad Assault.",
+   "from": [
+    "Quests (2 in the November 2026 quests)"
+   ],
+   "best_use": {
+    "text": "A quest map that asks for all four allies to survive, when one fell near the end.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Do not pay an orb for a revive.",
+    "basis": "experience"
+   },
+   "numbers": {},
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, List of items (item texts)",
+     "url": "https://feheroes.fandom.com/wiki/List_of_items",
+     "date": "2026-10-21",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Light%27s Blessing",
+     "url": "https://feheroes.fandom.com/wiki/Light%27s_Blessing",
+     "date": "2020-01-24",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Project data, tools/cache/QuestRewards.json: rewards of the quests running in November 2026",
+     "url": null,
+     "date": "2026-11-15",
+     "date_kind": "data date"
+    }
+   ],
+   "note": "The list of modes where it is not allowed is from a 2020 page."
+  },
+  {
+   "id": "aides_essence",
+   "name": "Aide's Essence",
+   "what": "Give another hero +1 to all stats and the Aide accessories.",
+   "from": [
+    "One with every copy of an Aided hero"
+   ],
+   "best_use": {
+    "text": "On a hero you field in every mode.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Nothing is lost by waiting.",
+    "basis": "experience"
+   },
+   "numbers": {},
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Aide%27s Essence",
+     "url": "https://feheroes.fandom.com/wiki/Aide%27s_Essence",
+     "date": "2025-10-24",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Official guide, Aided Heroes Accompanied by Aides",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3840.html",
+     "date": "2026-11-15",
+     "date_kind": "read in review round 1 on this day; undated page"
+    }
+   ],
+   "note": null
+  },
+  {
+   "id": "bouquets",
+   "name": "Bouquets",
+   "what": "Give another hero support rank S+ with ally and summoner. Each Entwined hero has its own Bouquet with a small combat bonus (Sharena's: Atk/Spd+2, Ash's: Atk/Def+2).",
+   "from": [
+    "One with every copy of an Entwined hero"
+   ],
+   "best_use": {
+    "text": "On a hero you always field with the same partner.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Nothing is lost by waiting.",
+    "basis": "experience"
+   },
+   "numbers": {},
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Bouquets",
+     "url": "https://feheroes.fandom.com/wiki/Bouquets",
+     "date": "2026-09-24",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Official guide, Enhanced Ally/Summoner Support with Entwined Heroes",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3860.html",
+     "date": "2026-11-15",
+     "date_kind": "read in review round 1 on this day; undated page"
+    }
+   ],
+   "note": null
+  },
+  {
+   "id": "vignettes",
+   "name": "Vignettes",
+   "what": "Give another hero +2 to all stats and a Vista hero's status scene. A hero from a version at least two numbers below the current one can take a second Vignette, for +4.",
+   "from": [
+    "One with every copy of a Vista hero"
+   ],
+   "best_use": {
+    "text": "On an older hero that qualifies for two: +4 to all stats.",
+    "basis": "source"
+   },
+   "do_not": {
+    "text": "Nothing is lost by waiting.",
+    "basis": "experience"
+   },
+   "numbers": {
+    "stats_one": 2,
+    "stats_two": 4
+   },
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Vignette",
+     "url": "https://feheroes.fandom.com/wiki/Vignette",
+     "date": "2026-10-21",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Official guide, Vista Heroes with Special Status Scenes",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3880.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    }
+   ],
+   "note": null
+  },
+  {
+   "id": "badges_shards_crystals",
+   "name": "Badges, Shards and Crystals",
+   "what": "Badges are a material for Sacred Seals and promotions; Shards and Crystals level heroes up.",
+   "from": [
+    "Training Tower",
+    "Quests (several thousand of each in the November 2026 quests)"
+   ],
+   "best_use": {
+    "text": "Ignore them. You always have enough.",
+    "basis": "experience"
+   },
+   "do_not": {
+    "text": "Nothing to avoid.",
+    "basis": "experience"
+   },
+   "numbers": {},
+   "paid_sources": null,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Badges",
+     "url": "https://feheroes.fandom.com/wiki/Badges",
+     "date": "2020-04-29",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, Universal Crystal",
+     "url": "https://feheroes.fandom.com/wiki/Universal_Crystal",
+     "date": "2019-02-08",
+     "date_kind": "last revision"
+    },
+    {
+     "title": "Project data, tools/cache/QuestRewards.json: rewards of the quests running in November 2026",
+     "url": null,
+     "date": "2026-11-15",
+     "date_kind": "data date"
+    }
+   ],
+   "note": null
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+tools/cache/
+reviews/
+__pycache__/
+*.err
+.env
+.env.*
+preview/

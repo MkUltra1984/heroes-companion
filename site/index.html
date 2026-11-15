@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://static.wikia.nocookie.net; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Heroes Companion</title>
+<meta name="description" content="A free, fan-made companion for Fire Emblem Heroes: every hero with level 40 stats and skills, your own barracks and teams, the banners that run now compared with what you own, and the quest orbs that are still open.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#03111B">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="art/favicon.png">
+<link rel="preload" href="fonts/nunito-sans-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/cinzel-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="style.css">
+<link rel="modulepreload" href="js/main.js">
+<link rel="preload" href="locales/en.json" as="fetch" crossorigin>
+<link rel="preload" href="data/heroes.json" as="fetch" crossorigin>
+<script src="js/guard.js"></script>
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#view" id="skip">Skip to the content</a>
+<header id="top" class="top">
+  <a class="brand" href="#/home"><img src="art/emblem.webp" alt="" width="40" height="40"><span>Heroes Companion</span></a>
+  <nav id="nav" class="tabs" aria-label="Pages">
+    <a class="tab" href="#/home" data-v="home"><img src="art/nav-home.webp" alt="" width="30" height="30"><span>Home</span></a>
+    <a class="tab" href="#/heroes" data-v="heroes"><img src="art/nav-heroes.webp" alt="" width="30" height="30"><span>Heroes</span></a>
+    <a class="tab" href="#/summon" data-v="summon"><img src="art/nav-summon.webp" alt="" width="30" height="30"><span>Summon</span></a>
+    <a class="tab" href="#/orbs" data-v="orbs"><img src="art/nav-orbs.webp" alt="" width="30" height="30"><span>Orbs</span></a>
+    <a class="tab" href="#/barracks" data-v="barracks"><img src="art/nav-barracks.webp" alt="" width="30" height="30"><span>Barracks</span></a>
+  </nav>
+  <div class="top-right"><a class="orbchip num" href="#/summon" id="orbchip"><span class="orb" aria-hidden="true"></span><span id="orbcount">0</span></a></div>
+</header>
+<div id="notice" class="notices"></div>
+<main id="view" class="wrap" tabindex="-1">
+  <p class="dim pad" id="bootwait">Loading…</p>
+  <div class="card" id="bootfail" role="alert" hidden>
+    <h1>The page could not start</h1>
+    <p>Its texts or the game data did not load. Check your connection and try again.</p>
+    <p class="dim small" id="bootfail-detail"></p>
+    <button class="btn primary" type="button" id="bootfail-retry">Try again</button>
+  </div>
+  <noscript><div class="card"><p>Heroes Companion needs JavaScript to show its pages.</p></div></noscript>
+</main>
+<footer id="foot" class="foot"></footer>
+<nav id="nav2" class="bottom" aria-label="Pages">
+  <a class="btab" href="#/home" data-v="home"><img src="art/nav-home.webp" alt="" width="32" height="32"><span>Home</span></a>
+  <a class="btab" href="#/heroes" data-v="heroes"><img src="art/nav-heroes.webp" alt="" width="32" height="32"><span>Heroes</span></a>
+  <a class="btab" href="#/summon" data-v="summon"><img src="art/nav-summon.webp" alt="" width="32" height="32"><span>Summon</span></a>
+  <a class="btab" href="#/orbs" data-v="orbs"><img src="art/nav-orbs.webp" alt="" width="32" height="32"><span>Orbs</span></a>
+  <a class="btab" href="#/barracks" data-v="barracks"><img src="art/nav-barracks.webp" alt="" width="32" height="32"><span>Barracks</span></a>
+</nav>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

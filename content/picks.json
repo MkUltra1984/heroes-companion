@@ -1,0 +1,75 @@
+{
+ "as_of": "2026-11-15",
+ "game_version": "10.11.0",
+ "stale_after_days": 45,
+ "method": "A hero is listed only when two independent tier lists both place it in their top group on the dates given: Game8 (updated 11 Nov 2026) and Pocket Gamer (updated 5 Nov 2026, version 10.11.0). No rating, score or rank is copied, and the order below is by release date, newest first, not by strength. The 'why' sentences are our own summaries of what each hero's skills do, checked against the hero's Game8 page (each updated 6 Nov 2026).",
+ "limits": "Eight heroes passed the two-source test. Eight further heroes are in the top group of one list only and are left out. Neither source names a game mode for these heroes on the pages read, so `mode` is 'general' for all and `role` says what the hero does. The list covers heroes summoned at 5 stars only: no free or Heroic Grail hero passed the test.",
+ "shared_sources": [
+  {"title": "Game8, Tier List (the hero is in its top group)", "url": "https://game8.co/games/fire-emblem-heroes/archives/257303", "date": "2026-11-11", "date_kind": "last updated"},
+  {"title": "Pocket Gamer, Fire Emblem Heroes tier list (the hero is in its top tier)", "url": "https://www.pocketgamer.com/fire-emblem-heroes/tier-list", "date": "2026-11-05", "date_kind": "last updated"}
+ ],
+ "picks": [
+  {
+   "id": "Hector Of Strength", "name": "Hector: Of Strength", "type": "Emblem", "released": "2026-10-30",
+   "mode": "general", "role": "Tank that takes hits for allies; engage partner",
+   "why": "Armored axe tank who takes hits for nearby allies and grants guaranteed follow-up attacks; his engage effect raises another hero's Special damage.",
+   "game8_archive": 636129,
+   "sources": [{"title": "Game8, Emblem Hector", "url": "https://game8.co/games/fire-emblem-heroes/archives/636129", "date": "2026-11-06", "date_kind": "last updated"}]
+  },
+  {
+   "id": "Gullveig Seer Reborn", "name": "Gullveig: Seer Reborn", "type": "Vista", "released": "2026-10-16",
+   "mode": "general", "role": "Ranged attacker with extra actions",
+   "why": "Cavalry mage who weakens nearby foes at the start of the turn and can act again up to twice in one turn.",
+   "game8_archive": 632117,
+   "sources": [{"title": "Game8, Vista Gullveig", "url": "https://game8.co/games/fire-emblem-heroes/archives/632117", "date": "2026-11-06", "date_kind": "last updated"}]
+  },
+  {
+   "id": "Edelgard Beyond Bounds", "name": "Edelgard: Beyond Bounds", "type": "Duo, Brave", "released": "2026-10-16",
+   "mode": "general", "role": "Armored tank",
+   "why": "Armored axe hero who counterattacks at any range, cuts incoming damage and grants status effects to herself and nearby allies at the start of every phase.",
+   "game8_archive": 632116,
+   "sources": [{"title": "Game8, Duo Brave Edelgard", "url": "https://game8.co/games/fire-emblem-heroes/archives/632116", "date": "2026-11-06", "date_kind": "last updated"}]
+  },
+  {
+   "id": "Sigurd Legacy of Justice", "name": "Sigurd: Legacy of Justice", "type": "Brave", "released": "2026-08-17",
+   "mode": "general", "role": "Melee attacker who moves again after combat",
+   "why": "Cavalry sword hero who damages nearby foes before combat, reduces what he takes and moves again afterwards.",
+   "game8_archive": 616088,
+   "sources": [{"title": "Game8, Brave Sigurd", "url": "https://game8.co/games/fire-emblem-heroes/archives/616088", "date": "2026-11-06", "date_kind": "last updated"}]
+  },
+  {
+   "id": "Tsubasa Summoned Girl", "name": "Tsubasa: Summoned Girl", "type": "Brave", "released": "2026-08-17",
+   "mode": "general", "role": "Ranged attacker and mobility support",
+   "why": "Flying mage who gives nearby allies warp movement and the Cadenza effect, and boosts her own stats in combat.",
+   "game8_archive": 616089,
+   "sources": [{"title": "Game8, Brave Tsubasa", "url": "https://game8.co/games/fire-emblem-heroes/archives/616089", "date": "2026-11-06", "date_kind": "last updated"}]
+  },
+  {
+   "id": "Baldr Eternal Shimmer", "name": "Baldr: Eternal Shimmer", "type": "Duo, seasonal", "released": "2026-06-17",
+   "mode": "general", "role": "Ranged attacker",
+   "why": "Flying mage who can attack twice, moves again after combat, boosts nearby allies and survives one lethal hit.",
+   "game8_archive": 605700,
+   "sources": [{"title": "Game8, Summer Baldr", "url": "https://game8.co/games/fire-emblem-heroes/archives/605700", "date": "2026-11-06", "date_kind": "last updated"}]
+  },
+  {
+   "id": "Roy Of Binding", "name": "Roy: Of Binding", "type": "Emblem", "released": "2026-05-29",
+   "mode": "general", "role": "All-round fighter; engage partner",
+   "why": "Infantry sword hero who counterattacks at any range and fights well on both turns, and whose Emblem effect adds a once-per-turn survival effect.",
+   "game8_archive": 603005,
+   "sources": [{"title": "Game8, Emblem Roy", "url": "https://game8.co/games/fire-emblem-heroes/archives/603005", "date": "2026-11-06", "date_kind": "last updated"}]
+  },
+  {
+   "id": "Lucina Of Awakening", "name": "Lucina: Of Awakening", "type": "Emblem", "released": "2026-03-30",
+   "mode": "general", "role": "Ranged attacker and team support; engage partner",
+   "why": "Infantry archer whose Special reduces damage to nearby allies and who can act again after using an Assist.",
+   "game8_archive": 590677,
+   "sources": [{"title": "Game8, Emblem Lucina", "url": "https://game8.co/games/fire-emblem-heroes/archives/590677", "date": "2026-11-06", "date_kind": "last updated"}]
+  }
+ ],
+ "page_text": {
+  "heading": "Picks, as of {month} {year}",
+  "sub": "Heroes that two independent tier lists both place at the top. Newest first; the order is not a ranking.",
+  "stale": "This list is from {month} {year}. Newer heroes are missing.",
+  "link": "Full current rating: Game8 tier list"
+ }
+}

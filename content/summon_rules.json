@@ -1,0 +1,1777 @@
+{
+ "as_of": "2026-11-15",
+ "game_version": "10.11.0",
+ "how_to_read": "One entry per value of `t` in site/data/banners.json. Rates are starting rates in percent, taken from the rates box of real banner pages on the community wiki, each with the date of the page's last revision. null means not verified: print 'Check the rates on the banner's details screen' instead. `verified` refers to the rates. The free pick has its own flags (`who`: everyone, feh_pass, not_listed or null).",
+ "rate_keys": {
+  "focus5": "5-star focus",
+  "other5": "other 5-star heroes",
+  "focus4": "4-star focus",
+  "special4": "4-star special rate (older 5-star heroes that arrive at 4 stars)",
+  "special4_shsr": "4-star special rate, seasonal heroes (4★SHSR)",
+  "star4": "4-star",
+  "star3": "3-star"
+ },
+ "shared_rules": {
+  "cost": {
+   "text": "A circle has five stones. First 5 orbs, then 4, 4, 4, 3: 20 orbs for all five. The first summon on every banner is free, and a First Summon Ticket also pays the first stone.",
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Summon",
+     "url": "https://feheroes.fandom.com/wiki/Summon",
+     "date": "2022-02-26",
+     "date_kind": "last revision of the page (older than the 2025 limit)"
+    },
+    {
+     "title": "Official guide, Summon Focus Heroes Using the Free 5-star Summon Feature",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3490.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    }
+   ],
+   "note": "The wiki page is from 2022; the official guide confirms the free first summon and the tickets."
+  },
+  "rate_rise": {
+   "standard": "Every five summons without a 5-star hero add 0.5% to the 5-star rate, split evenly between focus and other 5-star heroes (0.25% each). The raise is applied when the circle is finished, not inside it. After 120 summons without a 5-star, the next circle is all 5-star heroes.",
+   "standard_no_other": "Same raise of 0.5% per five summons; on banners without other 5-star heroes all of it goes to the focus rate.",
+   "on_focus_5star": "A 5-star focus hero sets the rate back to the start once the circle is closed.",
+   "on_other_5star": null,
+   "on_4star": "A 4-star focus or 4-star special rate hero changes nothing.",
+   "carry_over": "The raise belongs to one banner and does not move to the next.",
+   "verified": false,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, Summon",
+     "url": "https://feheroes.fandom.com/wiki/Summon",
+     "date": "2022-02-26",
+     "date_kind": "last revision of the page (older than the 2025 limit)"
+    },
+    {
+     "title": "Fire Emblem Wiki, Summoning",
+     "url": "https://fireemblemwiki.org/wiki/Summoning",
+     "date": "2026-04-18",
+     "date_kind": "last edited (as recorded in review round 1)"
+    }
+   ],
+   "note": "No source dated 2025 or 2026 with the full rules was found: the community wiki page is from 2022; the Fire Emblem Wiki page (edited Apr 2026) agrees on 0.5% and 120. `on_other_5star` is null because sources differ: the 2022 wiki page says the rate drops by 1% each for focus and other; the Fire Emblem Wiki still says it resets; no official text was found. Wording the sources share: 'A 5-star that is not a focus hero lowers the raise but does not remove it.' The `standard_no_other` line is from play experience, not from a source."
+  },
+  "focus_charge": {
+   "text": "Each 5-star hero that is not a focus hero lights one of three charges. With three lit, the next circle draws its 5-star heroes from the focus heroes only (the other-5-star rate is added to the focus rate). It ends when a focus 5-star is summoned or the banner ends. A charge filled in the middle of a circle works from the next circle.",
+   "who": "feh_pass",
+   "verified": true,
+   "sources": [
+    {
+     "title": "Official guide, Activating the Charges (Focus Charge)",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3760.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    },
+    {
+     "title": "Nintendo Everything, version 7.2.0 patch notes (Focus Charge)",
+     "url": "https://nintendoeverything.com/fire-emblem-heroes-update-announced-version-7-2-0-patch-notes/",
+     "date": "2023-02",
+     "date_kind": "published"
+    }
+   ],
+   "note": "The Feh Pass page says the charges build up without a subscription but only take effect with one. Only banners with other 5-star heroes can charge."
+  },
+  "free_pick": {
+   "text": "After 40 summons on a banner you may take one focus 5-star hero of your choice for free, where the banner type has the feature. The free first summon and ticket summons count toward the 40. Each free pick also gives one Celestial Stone. Summons made before subscribing to Feh Pass still count.",
+   "everyone": [
+    "New Heroes",
+    "Revival",
+    "Legendary/Mythic/Emblem Hero Remix",
+    "New Heroes Return",
+    "Legendary/Mythic Hero - Weekly Revival"
+   ],
+   "feh_pass_only": [
+    "Special Heroes Summoning Events (not their revivals)",
+    "Double Special Heroes",
+    "Emblem/Legendary/Mythic Hero Summoning Event",
+    "Hero Fest"
+   ],
+   "times_per_banner": null,
+   "cost_40_summons_max_orbs": 155,
+   "verified": true,
+   "sources": [
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    },
+    {
+     "title": "Official guide, Summon Focus Heroes Using the Free 5-star Summon Feature",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3490.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Official guide, Types of Summoning Events",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-4020.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Game8, Who Should You Pull From The Free 5 Star Summons?",
+     "url": "https://game8.co/games/fire-emblem-heroes/archives/322806",
+     "date": "2025-08-16",
+     "date_kind": "last updated"
+    },
+    {
+     "title": "Final Weapon, Emblem Hero Hector: Of Strength announcement",
+     "url": "https://finalweapon.net/2026/10/29/fire-emblem-heroes-hector-of-strength/",
+     "date": "2026-10-29",
+     "date_kind": "published"
+    }
+   ],
+   "note": "The two lists are the official table, in the official words. How often the pick repeats is not on the official page: Game8 (Aug 2025) says one free hero per banner; Final Weapon (Oct 2026) reports up to three times for Feh Pass subscribers on the Emblem Hector banner. Kept null. 155 orbs = eight full circles minus the free first stone."
+  },
+  "returns": {
+   "text": "Legendary and Mythic heroes come back on a banner roughly every three months.",
+   "verified": true,
+   "sources": [
+    {
+     "title": "Official guide, Legendary and Mythic Hero Summoning Focuses",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3120.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    }
+   ]
+  }
+ },
+ "verdict_rules": {
+  "always_take": "Free: list first.",
+  "worth_orbs_if_wanted": "Recommend when the conditions hold for this player.",
+  "worth_orbs_by_color": "Recommend per color from the count of focus heroes new for the player.",
+  "skip_unless_wanted": "Do not recommend; show the reason.",
+  "check_in_game": "No verdict; send the player to the banner's details screen."
+ },
+ "types": [
+  {
+   "type": "New Heroes",
+   "description": "The monthly banner that brings new heroes into the game. Three or four focus heroes, sometimes one of them also at 4 stars.",
+   "rates": {
+    "focus5": 3,
+    "other5": 3,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 36
+   },
+   "rates_variants": [
+    {
+     "when": "one focus hero is also a 4-star focus",
+     "rates": {
+      "focus5": 3,
+      "other5": 3,
+      "focus4": 3,
+      "special4": 3,
+      "special4_shsr": null,
+      "star4": 52,
+      "star3": 36
+     }
+    }
+   ],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": "everyone",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "Listed for players with and without Feh Pass. Game8 (Aug 2025): one free hero per banner."
+   },
+   "verdict": {
+    "rule": "worth_orbs_if_wanted",
+    "text": "Spend here when you want one of the new heroes and can reach 40 summons: the free pick makes one copy certain. With fewer orbs than that, take the free first summon and stop.",
+    "conditions": [
+     "at least one focus hero is new for the player",
+     "orbs and tickets reach 40 summons (155 orbs at most with full circles)"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"New Heroes: Fortune's Weave\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/New_Heroes:_Fortune's_Weave",
+     "date": "2026-09-26",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Duo Dimitri & Duo Edelgard\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Duo_Dimitri_&_Duo_Edelgard",
+     "date": "2026-10-22",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    },
+    {
+     "title": "Game8, Who Should You Pull From The Free 5 Star Summons?",
+     "url": "https://game8.co/games/fire-emblem-heroes/archives/322806",
+     "date": "2025-08-16",
+     "date_kind": "last updated"
+    }
+   ],
+   "sample": "2 banners (Sep and Oct 2026)",
+   "note": null
+  },
+  {
+   "type": "Special",
+   "description": "Seasonal heroes in costumes. The wiki files three different things under this type: a new seasonal banner (about a month long), its one-week return a year or two later, and short re-runs marked (4★SHSR) where older seasonal heroes also drop at 4 stars.",
+   "rates": {
+    "focus5": 3,
+    "other5": 3,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 36
+   },
+   "rates_variants": [
+    {
+     "when": "one focus hero is also a 4-star focus",
+     "rates": {
+      "focus5": 3,
+      "other5": 3,
+      "focus4": 3,
+      "special4": 3,
+      "special4_shsr": null,
+      "star4": 52,
+      "star3": 36
+     }
+    },
+    {
+     "when": "banner name contains (4★SHSR)",
+     "rates": {
+      "focus5": 4,
+      "other5": 2,
+      "focus4": 3,
+      "special4": 3,
+      "special4_shsr": 6,
+      "star4": 52,
+      "star3": 30
+     },
+     "note": "Wyvern Ninja (4★SHSR), Nov 2026. Without a 4-star focus hero the 4-star share is 55 (ω Special Heroes revival, Aug 2026)."
+    }
+   ],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": "feh_pass",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "Feh Pass only, and only on Special Heroes events that are not revivals (official footnote). By the official table a re-run of an older seasonal banner has no free pick for anyone."
+   },
+   "verdict": {
+    "rule": "skip_unless_wanted",
+    "text": "No free pick without Feh Pass, and the heroes return about once a year. Summon only for a hero you want now. On a (4★SHSR) re-run, a 6% chance per summon of an older seasonal hero at 4 stars makes cheap merges and skills possible.",
+    "conditions": [
+     "a free pick is counted only when the Feh Pass setting is on and the banner is a first run"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Family Ninja Class (Focus)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Family_Ninja_Class_(Focus)",
+     "date": "2026-11-05",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Our Path Ahead (Focus)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Our_Path_Ahead_(Focus)",
+     "date": "2026-11-05",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Wyvern Ninja (Focus)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Wyvern_Ninja_(Focus)",
+     "date": "2026-11-11",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    },
+    {
+     "title": "Official guide, Types of Summoning Events",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-4020.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    }
+   ],
+   "sample": "3 banner pages, 9 runs from Nov 2024 to Nov 2026",
+   "note": "The first run and the re-run cannot be told apart by type alone. Treat a Special banner as a re-run when the same name appears earlier in the banner data or the name contains (4★SHSR)."
+  },
+  {
+   "type": "Weekly Revival",
+   "description": "A one-week return of three older 5-star heroes. Several run at the same time and rotate every week.",
+   "rates": {
+    "focus5": 4,
+    "other5": 2,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 36
+   },
+   "rates_variants": [],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": null,
+    "after_summons": null,
+    "times": null,
+    "needs_in_game_check": true,
+    "note": "The official table lists 'Revival' and 'Legendary/Mythic Hero - Weekly Revival' as having the free pick for everyone. Whether 'Revival' covers these plain weekly banners could not be confirmed, so nothing is promised here."
+   },
+   "verdict": {
+    "rule": "skip_unless_wanted",
+    "text": "The focus share is good (4 of 6 percent), but the heroes are old. Worth orbs only for one specific hero you still use or need for a skill.",
+    "conditions": []
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Focus: Weekly Revival 90\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Focus:_Weekly_Revival_90",
+     "date": "2026-11-05",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner page, 3 runs (May 2025 to Nov 2026)",
+   "note": "Rates verified; free pick unknown."
+  },
+  {
+   "type": "New Heroes Revival",
+   "description": "A one-week return of a New Heroes banner from about a year ago, with the same focus heroes.",
+   "rates": {
+    "focus5": 3,
+    "other5": 3,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 36
+   },
+   "rates_variants": [
+    {
+     "when": "one focus hero is also a 4-star focus",
+     "rates": {
+      "focus5": 3,
+      "other5": 3,
+      "focus4": 3,
+      "special4": 3,
+      "special4_shsr": null,
+      "star4": 52,
+      "star3": 36
+     }
+    }
+   ],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": "everyone",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": true,
+    "note": "The official table lists 'Revival' for players with and without Feh Pass. This type is matched to that row by its in-game name ('Revival: ...'). Check the first such banner in the game."
+   },
+   "verdict": {
+    "rule": "worth_orbs_if_wanted",
+    "text": "Same deal as a New Heroes banner one year later: good when you missed a hero you still want and can reach 40 summons. Year-old heroes are weaker than this month's, so do not start it for its own sake.",
+    "conditions": [
+     "a focus hero is new for the player",
+     "40 summons reachable"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Rea. Lysithea & Chosen Alfonse\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Rea._Lysithea_&_Chosen_Alfonse",
+     "date": "2026-11-05",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"New Heroes: In Those We Hope\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/New_Heroes:_In_Those_We_Hope",
+     "date": "2026-08-17",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "2 banner pages (Jul 2025, Nov 2026)",
+   "note": null
+  },
+  {
+   "type": "Legendary & Mythic Hero Remix",
+   "description": "Eight Legendary, Mythic or Emblem heroes from older years, two per color, at a 6% focus rate with no other 5-star heroes. Runs with the monthly Remix that updates old Legendary and Mythic heroes.",
+   "rates": {
+    "focus5": 6,
+    "other5": 0,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 57,
+    "star3": 34
+   },
+   "rates_variants": [],
+   "rate_rise": "standard_no_other",
+   "free_pick": {
+    "who": "everyone",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "Listed as 'Legendary/Mythic/Emblem Hero Remix' for players with and without Feh Pass."
+   },
+   "verdict": {
+    "rule": "worth_orbs_if_wanted",
+    "text": "Every 5-star is a focus hero and the free pick is open to everyone, so this is the cheapest sure way to an older Legendary, Mythic or Emblem hero. Worth it when a color holds two heroes you lack; skip when you own most of them.",
+    "conditions": [
+     "a color holds heroes new for the player",
+     "40 summons reachable"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Legendary Hero Remix 1 (Jul 2026)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Legendary_Hero_Remix_1_(Jul_2026)",
+     "date": "2026-07-12",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner",
+   "note": null
+  },
+  {
+   "type": "Legendary, Mythic & Emblem Hero Remix",
+   "description": "Eight Legendary, Mythic or Emblem heroes from older years, two per color, at a 6% focus rate with no other 5-star heroes. Runs with the monthly Remix that updates old Legendary and Mythic heroes.",
+   "rates": {
+    "focus5": 6,
+    "other5": 0,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 57,
+    "star3": 34
+   },
+   "rates_variants": [],
+   "rate_rise": "standard_no_other",
+   "free_pick": {
+    "who": "everyone",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "Listed as 'Legendary/Mythic/Emblem Hero Remix' for players with and without Feh Pass."
+   },
+   "verdict": {
+    "rule": "worth_orbs_if_wanted",
+    "text": "Every 5-star is a focus hero and the free pick is open to everyone, so this is the cheapest sure way to an older Legendary, Mythic or Emblem hero. Worth it when a color holds two heroes you lack; skip when you own most of them.",
+    "conditions": [
+     "a color holds heroes new for the player",
+     "40 summons reachable"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Myth. & Emb. Hero Remix 1 (Nov 2026)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Myth._&_Emb._Hero_Remix_1_(Nov_2026)",
+     "date": "2026-11-12",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner",
+   "note": null
+  },
+  {
+   "type": "New Power",
+   "description": "Runs with the monthly weapon refines: older heroes whose weapons were just refined.",
+   "rates": {
+    "focus5": 3,
+    "other5": 3,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 36
+   },
+   "rates_variants": [],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": "not_listed",
+    "after_summons": null,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "The official table of events with a free 5-star summon does not name this event type. Show no free pick unless the banner's own details screen offers one."
+   },
+   "verdict": {
+    "rule": "skip_unless_wanted",
+    "text": "Standard rates, no free pick listed, old heroes. Skip unless you want one of them.",
+    "conditions": []
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Focus: New Power (Nov 2026)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Focus:_New_Power_(Nov_2026)",
+     "date": "2026-11-05",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner",
+   "note": null
+  },
+  {
+   "type": "Voting Gauntlet",
+   "description": "Runs with a Voting Gauntlet event and features some of its contestants.",
+   "rates": {
+    "focus5": 3,
+    "other5": 3,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 36
+   },
+   "rates_variants": [],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": "not_listed",
+    "after_summons": null,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "The official table of events with a free 5-star summon does not name this event type. Show no free pick unless the banner's own details screen offers one."
+   },
+   "verdict": {
+    "rule": "skip_unless_wanted",
+    "text": "Standard rates, no free pick listed. Summon only for a hero you want; the event itself needs no summons.",
+    "conditions": []
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Focus: That Which Unites 2\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Focus:_That_Which_Unites_2",
+     "date": "2026-10-28",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner",
+   "note": null
+  },
+  {
+   "type": "Skill",
+   "description": "Three heroes who share a kind of skill, for about a week.",
+   "rates": {
+    "focus5": 3,
+    "other5": 3,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 36
+   },
+   "rates_variants": [],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": "not_listed",
+    "after_summons": null,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "The official table of events with a free 5-star summon does not name this event type. Show no free pick unless the banner's own details screen offers one."
+   },
+   "verdict": {
+    "rule": "skip_unless_wanted",
+    "text": "Standard rates, no free pick listed. Useful only when you need exactly that skill to pass on.",
+    "conditions": []
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Focus: Heroes with Havoc Skills\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Focus:_Heroes_with_Havoc_Skills",
+     "date": "2026-11-03",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner",
+   "note": null
+  },
+  {
+   "type": "Hall of Forms",
+   "description": "Runs with a Hall of Forms event and features the heroes used in it.",
+   "rates": {
+    "focus5": 3,
+    "other5": 3,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 36
+   },
+   "rates_variants": [],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": "not_listed",
+    "after_summons": null,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "The official table of events with a free 5-star summon does not name this event type. Show no free pick unless the banner's own details screen offers one."
+   },
+   "verdict": {
+    "rule": "skip_unless_wanted",
+    "text": "Standard rates, no free pick listed. The event can be played without summoning. Skip unless you want the hero.",
+    "conditions": []
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Focus: Hall of Forms (Oct 2026)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Focus:_Hall_of_Forms_(Oct_2026)",
+     "date": "2026-10-16",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner",
+   "note": null
+  },
+  {
+   "type": "Hall of Forms Revival",
+   "description": "Runs with the return of an older Hall of Forms event.",
+   "rates": {
+    "focus5": 3,
+    "other5": 3,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 36
+   },
+   "rates_variants": [],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": "not_listed",
+    "after_summons": null,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "The official table of events with a free 5-star summon does not name this event type. Show no free pick unless the banner's own details screen offers one."
+   },
+   "verdict": {
+    "rule": "skip_unless_wanted",
+    "text": "Standard rates, no free pick listed, older heroes. Skip unless you want the hero.",
+    "conditions": []
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Focus: Hall of Forms (Feb 2025)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Focus:_Hall_of_Forms_(Feb_2025)",
+     "date": "2026-10-30",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner",
+   "note": null
+  },
+  {
+   "type": "Tempest Trials",
+   "description": "Runs with the monthly Tempest Trials and features heroes tied to it.",
+   "rates": {
+    "focus5": 3,
+    "other5": 3,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 36
+   },
+   "rates_variants": [],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": "not_listed",
+    "after_summons": null,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "The official table of events with a free 5-star summon does not name this event type. Show no free pick unless the banner's own details screen offers one."
+   },
+   "verdict": {
+    "rule": "skip_unless_wanted",
+    "text": "Standard rates, no free pick listed. The event's orbs do not need these heroes. Skip unless you want the hero.",
+    "conditions": []
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Focus: Tempest Trials (Daughters 4)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Focus:_Tempest_Trials_(Daughters_4)",
+     "date": "2026-10-06",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner",
+   "note": null
+  },
+  {
+   "type": "Bound Hero Battle",
+   "description": "Runs with a Bound Hero Battle and features the heroes of that map.",
+   "rates": {
+    "focus5": 3,
+    "other5": 3,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 36
+   },
+   "rates_variants": [],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": "not_listed",
+    "after_summons": null,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "The official table of events with a free 5-star summon does not name this event type. Show no free pick unless the banner's own details screen offers one."
+   },
+   "verdict": {
+    "rule": "skip_unless_wanted",
+    "text": "Standard rates, no free pick listed. Skip unless you want the hero.",
+    "conditions": []
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Focus: Nel & Rafal's Battle\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Focus:_Nel_&_Rafal's_Battle",
+     "date": "2026-08-30",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner",
+   "note": null
+  },
+  {
+   "type": "Other",
+   "description": "A mixed group: anniversary, Golden Week and one-off banners that fit no other type. Rates differ from banner to banner.",
+   "rates": {
+    "focus5": null,
+    "other5": null,
+    "focus4": null,
+    "special4": null,
+    "special4_shsr": null,
+    "star4": null,
+    "star3": null
+   },
+   "rates_variants": [
+    {
+     "when": "Focus: Double Emblem Heroes (Jun 2026)",
+     "rates": {
+      "focus5": 6,
+      "other5": 0,
+      "focus4": null,
+      "special4": 3,
+      "special4_shsr": null,
+      "star4": 57,
+      "star3": 34
+     }
+    },
+    {
+     "when": "GW: ω CYL Heroes (May 2026)",
+     "rates": {
+      "focus5": 8,
+      "other5": 0,
+      "focus4": null,
+      "special4": 3,
+      "special4_shsr": null,
+      "star4": 56,
+      "star3": 33
+     }
+    }
+   ],
+   "rate_rise": null,
+   "free_pick": {
+    "who": null,
+    "after_summons": null,
+    "times": null,
+    "needs_in_game_check": true,
+    "note": "Depends on the banner."
+   },
+   "verdict": {
+    "rule": "check_in_game",
+    "text": "No fixed rule. Read the rates on the banner's details screen before spending.",
+    "conditions": []
+   },
+   "verified": false,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Focus: Double Emblem Heroes\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Focus:_Double_Emblem_Heroes",
+     "date": "2026-06-11",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"GW: ω CYL Heroes (2026)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/GW:_%CF%89_CYL_Heroes_(2026)",
+     "date": "2026-05-03",
+     "date_kind": "last revision of the page"
+    }
+   ],
+   "sample": "2 of 15 banners read",
+   "note": "Rates are null on purpose: the two banners read have different rates, so no single value is true for the type. The variants are examples, not a rule."
+  },
+  {
+   "type": "Returning",
+   "description": "Called New Heroes Return in the game: eight heroes from New Heroes banners of the past months, two per color, with no other 5-star heroes.",
+   "rates": {
+    "focus5": 6,
+    "other5": 0,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 57,
+    "star3": 34
+   },
+   "rates_variants": [],
+   "rate_rise": "standard_no_other",
+   "free_pick": {
+    "who": "everyone",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "Listed as 'New Heroes Return' for players with and without Feh Pass."
+   },
+   "verdict": {
+    "rule": "worth_orbs_if_wanted",
+    "text": "A second chance at heroes from recent months, with every 5-star a focus hero and a free pick for everyone. One of the better places for orbs when a color holds two recent heroes you missed.",
+    "conditions": [
+     "a color holds heroes new for the player",
+     "40 summons reachable"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"New Heroes Return (Oct 2026)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/New_Heroes_Return_(Oct_2026)",
+     "date": "2026-10-28",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner",
+   "note": null
+  },
+  {
+   "type": "Legendary Revival",
+   "description": "Three older Legendary heroes for about a month, with other 5-star heroes still in the pool.",
+   "rates": {
+    "focus5": 4,
+    "other5": 2,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 36
+   },
+   "rates_variants": [],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": "everyone",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": true,
+    "note": "The official table lists 'Legendary/Mythic Hero - Weekly Revival' for players with and without Feh Pass. This type is matched to that row by name. Check one banner in the game."
+   },
+   "verdict": {
+    "rule": "worth_orbs_if_wanted",
+    "text": "Three old Legendary heroes at 4%. Worth orbs only when you need one of them for your season teams; otherwise the Remix banner (6%, no other 5-stars) is the better way to old Legendary heroes.",
+    "conditions": [
+     "the player lacks a focus hero that fits a season team"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Focus: Legendary Revival 9\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Focus:_Legendary_Revival_9",
+     "date": "2026-11-11",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner page, 1 to 2 runs in 2026",
+   "note": null
+  },
+  {
+   "type": "Mythic Revival",
+   "description": "Three older Mythic heroes for about a month, with other 5-star heroes still in the pool.",
+   "rates": {
+    "focus5": 4,
+    "other5": 2,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 36
+   },
+   "rates_variants": [],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": "everyone",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": true,
+    "note": "The official table lists 'Legendary/Mythic Hero - Weekly Revival' for players with and without Feh Pass. This type is matched to that row by name. Check one banner in the game."
+   },
+   "verdict": {
+    "rule": "worth_orbs_if_wanted",
+    "text": "Three old Mythic heroes at 4%. Worth orbs only when you need one of them for your season teams; otherwise the Remix banner (6%, no other 5-stars) is the better way to old Mythic heroes.",
+    "conditions": [
+     "the player lacks a focus hero that fits a season team"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Focus: Mythic Revival 2\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Focus:_Mythic_Revival_2",
+     "date": "2026-11-05",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner page, 1 to 2 runs in 2026",
+   "note": null
+  },
+  {
+   "type": "Double Special Heroes",
+   "description": "Eight seasonal heroes from the past year, two per color, with no other 5-star heroes. Some of them can also appear at 4 stars.",
+   "rates": {
+    "focus5": 6,
+    "other5": 0,
+    "focus4": 3,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 54,
+    "star3": 34
+   },
+   "rates_variants": [
+    {
+     "when": "no 4-star focus hero on the banner",
+     "rates": {
+      "focus5": 6,
+      "other5": 0,
+      "focus4": null,
+      "special4": 3,
+      "special4_shsr": null,
+      "star4": 57,
+      "star3": 34
+     },
+     "note": "From the wiki's Summon page (2022); the Oct 2026 banner had 4-star focus heroes."
+    }
+   ],
+   "rate_rise": "standard_no_other",
+   "free_pick": {
+    "who": "feh_pass",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "Feh Pass only."
+   },
+   "verdict": {
+    "rule": "worth_orbs_if_wanted",
+    "text": "Every 5-star is a seasonal focus hero, so this is the efficient way to a seasonal hero you missed. No free pick without Feh Pass, so set an orb limit before you start.",
+    "conditions": [
+     "a color holds heroes new for the player"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Focus: Double Special Heroes (Oct 2026)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Focus:_Double_Special_Heroes_(Oct_2026)",
+     "date": "2026-10-22",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner",
+   "note": null
+  },
+  {
+   "type": "Free Summon",
+   "description": "A free draw from a fixed pool, paid with a ticket the game gives you (for example as an Arena reward). Costs no orbs.",
+   "rates": {
+    "focus5": null,
+    "other5": null,
+    "focus4": null,
+    "special4": 100,
+    "special4_shsr": null,
+    "star4": null,
+    "star3": null
+   },
+   "rates_variants": [
+    {
+     "when": "Guaranteed 4★SHSR",
+     "rates": {
+      "focus5": null,
+      "other5": null,
+      "focus4": null,
+      "special4": null,
+      "special4_shsr": 100,
+      "star4": null,
+      "star3": null
+     }
+    }
+   ],
+   "rate_rise": null,
+   "free_pick": {
+    "who": "everyone",
+    "after_summons": 0,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "The whole banner is free."
+   },
+   "verdict": {
+    "rule": "always_take",
+    "text": "Free. Take it before it ends.",
+    "conditions": []
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Free Summon: Arena Reward 9\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Free_Summon:_Arena_Reward_9",
+     "date": "2026-08-07",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Guaranteed 4★SHSR 1\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Guaranteed_4%E2%98%85SHSR_1",
+     "date": "2026-08-02",
+     "date_kind": "last revision of the page"
+    }
+   ],
+   "sample": "2 banners",
+   "note": "100 means every draw comes from the named pool (4-star special rate heroes, or seasonal 4-star special rate heroes)."
+  },
+  {
+   "type": "Select Summon",
+   "description": "A free choice of one 5-star hero from a New Heroes banner, given at big events.",
+   "rates": {
+    "focus5": 100,
+    "other5": 0,
+    "focus4": null,
+    "special4": 0,
+    "special4_shsr": null,
+    "star4": 0,
+    "star3": 0
+   },
+   "rates_variants": [],
+   "rate_rise": null,
+   "free_pick": {
+    "who": "everyone",
+    "after_summons": 0,
+    "times": 1,
+    "needs_in_game_check": false,
+    "note": "You choose the hero. One per event."
+   },
+   "verdict": {
+    "rule": "always_take",
+    "text": "Free. Choose the hero you lack, or the one your teams need most.",
+    "conditions": []
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"New Heroes: In Those We Hope\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/New_Heroes:_In_Those_We_Hope",
+     "date": "2026-08-17",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"New Heroes: Fortune's Weave\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/New_Heroes:_Fortune's_Weave",
+     "date": "2026-09-26",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Game8, Who Should You Pull From The Free 5 Star Summons?",
+     "url": "https://game8.co/games/fire-emblem-heroes/archives/322806",
+     "date": "2025-08-16",
+     "date_kind": "last updated"
+    }
+   ],
+   "sample": "2 banners",
+   "note": null
+  },
+  {
+   "type": "Emblem",
+   "description": "The monthly banner with one or two new Emblem heroes plus older Legendary, Mythic, Emblem and seasonal heroes: twelve focus heroes, three per color, and no other 5-star heroes.",
+   "rates": {
+    "focus5": 8,
+    "other5": 0,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 34
+   },
+   "rates_variants": [],
+   "rate_rise": "standard_no_other",
+   "free_pick": {
+    "who": "feh_pass",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "Feh Pass only (official table: 'Emblem/Legendary/Mythic Hero Summoning Event'). Final Weapon reported for the Hector banner (Oct 2026): free every 40 summons, up to three times, for Feh Pass subscribers. The number of times is not on the official page, so it stays null."
+   },
+   "verdict": {
+    "rule": "worth_orbs_by_color",
+    "text": "The highest 5-star rate of the month, and every 5-star is one of twelve focus heroes. Worth orbs when one color holds two or three heroes you lack; weak when a color holds one hero you want and two you own. No free pick without Feh Pass. Featured heroes return roughly every three months.",
+    "conditions": [
+     "count per color the focus heroes that are new for the player",
+     "2 or 3 new in a color: summon that color; 1 new: only if that hero matters"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Emblem Hector: Of Strength\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Emblem_Hector:_Of_Strength",
+     "date": "2026-10-30",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    },
+    {
+     "title": "Official guide, Legendary and Mythic Hero Summoning Focuses",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3120.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Final Weapon, Emblem Hero Hector: Of Strength announcement",
+     "url": "https://finalweapon.net/2026/10/29/fire-emblem-heroes-hector-of-strength/",
+     "date": "2026-10-29",
+     "date_kind": "published"
+    }
+   ],
+   "sample": "1 banner each; all 6 types and the Nov 2025 Double Mythic banner show the same rates",
+   "note": "Every banner of these types read for this file had twelve focus heroes, including Emblem Hector: Of Strength. A single-hero Emblem banner did not occur."
+  },
+  {
+   "type": "Mythic",
+   "description": "The monthly banner with one or two new Mythic heroes plus older Legendary, Mythic, Emblem and seasonal heroes: twelve focus heroes, three per color, and no other 5-star heroes.",
+   "rates": {
+    "focus5": 8,
+    "other5": 0,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 34
+   },
+   "rates_variants": [],
+   "rate_rise": "standard_no_other",
+   "free_pick": {
+    "who": "feh_pass",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "Feh Pass only (official table: 'Emblem/Legendary/Mythic Hero Summoning Event'). Final Weapon reported for the Hector banner (Oct 2026): free every 40 summons, up to three times, for Feh Pass subscribers. The number of times is not on the official page, so it stays null."
+   },
+   "verdict": {
+    "rule": "worth_orbs_by_color",
+    "text": "The highest 5-star rate of the month, and every 5-star is one of twelve focus heroes. Worth orbs when one color holds two or three heroes you lack; weak when a color holds one hero you want and two you own. No free pick without Feh Pass. Featured heroes return roughly every three months.",
+    "conditions": [
+     "count per color the focus heroes that are new for the player",
+     "2 or 3 new in a color: summon that color; 1 new: only if that hero matters"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Mythic Heroes - Jörmungandr\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Mythic_Heroes_-_J%C3%B6rmungandr",
+     "date": "2026-06-29",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    },
+    {
+     "title": "Official guide, Legendary and Mythic Hero Summoning Focuses",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3120.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Final Weapon, Emblem Hero Hector: Of Strength announcement",
+     "url": "https://finalweapon.net/2026/10/29/fire-emblem-heroes-hector-of-strength/",
+     "date": "2026-10-29",
+     "date_kind": "published"
+    }
+   ],
+   "sample": "1 banner each; all 6 types and the Nov 2025 Double Mythic banner show the same rates",
+   "note": "Every banner of these types read for this file had twelve focus heroes, including Emblem Hector: Of Strength. A single-hero Emblem banner did not occur."
+  },
+  {
+   "type": "Legendary",
+   "description": "The monthly banner with one or two new Legendary heroes plus older Legendary, Mythic, Emblem and seasonal heroes: twelve focus heroes, three per color, and no other 5-star heroes.",
+   "rates": {
+    "focus5": 8,
+    "other5": 0,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 34
+   },
+   "rates_variants": [],
+   "rate_rise": "standard_no_other",
+   "free_pick": {
+    "who": "feh_pass",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "Feh Pass only (official table: 'Emblem/Legendary/Mythic Hero Summoning Event'). Final Weapon reported for the Hector banner (Oct 2026): free every 40 summons, up to three times, for Feh Pass subscribers. The number of times is not on the official page, so it stays null."
+   },
+   "verdict": {
+    "rule": "worth_orbs_by_color",
+    "text": "The highest 5-star rate of the month, and every 5-star is one of twelve focus heroes. Worth orbs when one color holds two or three heroes you lack; weak when a color holds one hero you want and two you own. No free pick without Feh Pass. Featured heroes return roughly every three months.",
+    "conditions": [
+     "count per color the focus heroes that are new for the player",
+     "2 or 3 new in a color: summon that color; 1 new: only if that hero matters"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Legendary Heroes - Rhea\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Legendary_Heroes_-_Rhea",
+     "date": "2026-08-31",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    },
+    {
+     "title": "Official guide, Legendary and Mythic Hero Summoning Focuses",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3120.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Final Weapon, Emblem Hero Hector: Of Strength announcement",
+     "url": "https://finalweapon.net/2026/10/29/fire-emblem-heroes-hector-of-strength/",
+     "date": "2026-10-29",
+     "date_kind": "published"
+    }
+   ],
+   "sample": "1 banner each; all 6 types and the Nov 2025 Double Mythic banner show the same rates",
+   "note": "Every banner of these types read for this file had twelve focus heroes, including Emblem Hector: Of Strength. A single-hero Emblem banner did not occur."
+  },
+  {
+   "type": "Legendary & Mythic",
+   "description": "The monthly banner with one or two new Legendary and Mythic heroes plus older Legendary, Mythic, Emblem and seasonal heroes: twelve focus heroes, three per color, and no other 5-star heroes.",
+   "rates": {
+    "focus5": 8,
+    "other5": 0,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 34
+   },
+   "rates_variants": [],
+   "rate_rise": "standard_no_other",
+   "free_pick": {
+    "who": "feh_pass",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "Feh Pass only (official table: 'Emblem/Legendary/Mythic Hero Summoning Event'). Final Weapon reported for the Hector banner (Oct 2026): free every 40 summons, up to three times, for Feh Pass subscribers. The number of times is not on the official page, so it stays null."
+   },
+   "verdict": {
+    "rule": "worth_orbs_by_color",
+    "text": "The highest 5-star rate of the month, and every 5-star is one of twelve focus heroes. Worth orbs when one color holds two or three heroes you lack; weak when a color holds one hero you want and two you own. No free pick without Feh Pass. Featured heroes return roughly every three months.",
+    "conditions": [
+     "count per color the focus heroes that are new for the player",
+     "2 or 3 new in a color: summon that color; 1 new: only if that hero matters"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Legendary Eshmel & Mythic Seiðr\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Legendary_Eshmel_&_Mythic_Sei%C3%B0r",
+     "date": "2026-09-30",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    },
+    {
+     "title": "Official guide, Legendary and Mythic Hero Summoning Focuses",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3120.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Final Weapon, Emblem Hero Hector: Of Strength announcement",
+     "url": "https://finalweapon.net/2026/10/29/fire-emblem-heroes-hector-of-strength/",
+     "date": "2026-10-29",
+     "date_kind": "published"
+    }
+   ],
+   "sample": "1 banner each; all 6 types and the Nov 2025 Double Mythic banner show the same rates",
+   "note": "Every banner of these types read for this file had twelve focus heroes, including Emblem Hector: Of Strength. A single-hero Emblem banner did not occur."
+  },
+  {
+   "type": "Emblem & Legendary",
+   "description": "The monthly banner with one or two new Emblem and Legendary heroes plus older Legendary, Mythic, Emblem and seasonal heroes: twelve focus heroes, three per color, and no other 5-star heroes.",
+   "rates": {
+    "focus5": 8,
+    "other5": 0,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 34
+   },
+   "rates_variants": [],
+   "rate_rise": "standard_no_other",
+   "free_pick": {
+    "who": "feh_pass",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "Feh Pass only (official table: 'Emblem/Legendary/Mythic Hero Summoning Event'). Final Weapon reported for the Hector banner (Oct 2026): free every 40 summons, up to three times, for Feh Pass subscribers. The number of times is not on the official page, so it stays null."
+   },
+   "verdict": {
+    "rule": "worth_orbs_by_color",
+    "text": "The highest 5-star rate of the month, and every 5-star is one of twelve focus heroes. Worth orbs when one color holds two or three heroes you lack; weak when a color holds one hero you want and two you own. No free pick without Feh Pass. Featured heroes return roughly every three months.",
+    "conditions": [
+     "count per color the focus heroes that are new for the player",
+     "2 or 3 new in a color: summon that color; 1 new: only if that hero matters"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Emblem Byleth & Legendary Elise\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Emblem_Byleth_&_Legendary_Elise",
+     "date": "2026-02-02",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    },
+    {
+     "title": "Official guide, Legendary and Mythic Hero Summoning Focuses",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3120.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Final Weapon, Emblem Hero Hector: Of Strength announcement",
+     "url": "https://finalweapon.net/2026/10/29/fire-emblem-heroes-hector-of-strength/",
+     "date": "2026-10-29",
+     "date_kind": "published"
+    }
+   ],
+   "sample": "1 banner each; all 6 types and the Nov 2025 Double Mythic banner show the same rates",
+   "note": "Every banner of these types read for this file had twelve focus heroes, including Emblem Hector: Of Strength. A single-hero Emblem banner did not occur."
+  },
+  {
+   "type": "Emblem & Mythic",
+   "description": "The monthly banner with one or two new Emblem and Mythic heroes plus older Legendary, Mythic, Emblem and seasonal heroes: twelve focus heroes, three per color, and no other 5-star heroes.",
+   "rates": {
+    "focus5": 8,
+    "other5": 0,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 34
+   },
+   "rates_variants": [],
+   "rate_rise": "standard_no_other",
+   "free_pick": {
+    "who": "feh_pass",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "Feh Pass only (official table: 'Emblem/Legendary/Mythic Hero Summoning Event'). Final Weapon reported for the Hector banner (Oct 2026): free every 40 summons, up to three times, for Feh Pass subscribers. The number of times is not on the official page, so it stays null."
+   },
+   "verdict": {
+    "rule": "worth_orbs_by_color",
+    "text": "The highest 5-star rate of the month, and every 5-star is one of twelve focus heroes. Worth orbs when one color holds two or three heroes you lack; weak when a color holds one hero you want and two you own. No free pick without Feh Pass. Featured heroes return roughly every three months.",
+    "conditions": [
+     "count per color the focus heroes that are new for the player",
+     "2 or 3 new in a color: summon that color; 1 new: only if that hero matters"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Emblem Corrin & Mythic Lyn\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Emblem_Corrin_&_Mythic_Lyn",
+     "date": "2025-09-30",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    },
+    {
+     "title": "Official guide, Legendary and Mythic Hero Summoning Focuses",
+     "url": "https://new-guide.fire-emblem-heroes.com/en-GB/feh-3120.html",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; undated page"
+    },
+    {
+     "title": "Final Weapon, Emblem Hero Hector: Of Strength announcement",
+     "url": "https://finalweapon.net/2026/10/29/fire-emblem-heroes-hector-of-strength/",
+     "date": "2026-10-29",
+     "date_kind": "published"
+    }
+   ],
+   "sample": "1 banner each; all 6 types and the Nov 2025 Double Mythic banner show the same rates",
+   "note": "Every banner of these types read for this file had twelve focus heroes, including Emblem Hector: Of Strength. A single-hero Emblem banner did not occur."
+  },
+  {
+   "type": "12 Luminaries",
+   "description": "Anniversary banners in February: twelve heroes chosen from the past year, three per color, no other 5-star heroes, some also at 4 stars.",
+   "rates": {
+    "focus5": 8,
+    "other5": 0,
+    "focus4": 3,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 53,
+    "star3": 33
+   },
+   "rates_variants": [],
+   "rate_rise": "standard_no_other",
+   "free_pick": {
+    "who": "not_listed",
+    "after_summons": null,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "The official table of events with a free 5-star summon does not name this event type. Show no free pick unless the banner's own details screen offers one."
+   },
+   "verdict": {
+    "rule": "worth_orbs_by_color",
+    "text": "Rates like a Legendary banner, with last year's seasonal and popular heroes. Worth orbs when a color holds two or three heroes you lack. Save for it in January.",
+    "conditions": [
+     "2 or 3 focus heroes new in one color"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"9th Anniv. \"12 Luminaries\" 3\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/9th_Anniv._%2212_Luminaries%22_3",
+     "date": "2026-02-20",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 of 3 banners in Feb 2026",
+   "note": null
+  },
+  {
+   "type": "ω Special Heroes",
+   "description": "New Year banners with eight seasonal heroes and a raised focus rate.",
+   "rates": {
+    "focus5": 6,
+    "other5": 2,
+    "focus4": 3,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 50,
+    "star3": 36
+   },
+   "rates_variants": [
+    {
+     "when": "name contains (4★SHSR), January 2026",
+     "rates": {
+      "focus5": 6,
+      "other5": 2,
+      "focus4": null,
+      "special4": 3,
+      "special4_shsr": 3,
+      "star4": 50,
+      "star3": 36
+     }
+    },
+    {
+     "when": "Revival: ω Special Heroes (4★SHSR), 16 to 20 Feb 2026",
+     "rates": {
+      "focus5": 3,
+      "other5": 3,
+      "focus4": null,
+      "special4": 3,
+      "special4_shsr": null,
+      "star4": 55,
+      "star3": 36
+     },
+     "note": "As entered on the wiki; lower than the January banners, so treat as unconfirmed."
+    }
+   ],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": null,
+    "after_summons": null,
+    "times": null,
+    "needs_in_game_check": true,
+    "note": "Not named in the official table. It may count as a Special Heroes event (Feh Pass); not confirmed."
+   },
+   "verdict": {
+    "rule": "worth_orbs_if_wanted",
+    "text": "6% focus over eight seasonal heroes. Worth orbs when a color holds two heroes you lack.",
+    "conditions": [
+     "a color holds heroes new for the player"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"New Year: ω Special Heroes 1 (2026)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/New_Year:_%CF%89_Special_Heroes_1_(2026)",
+     "date": "2025-12-26",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"New Year: ω Special Heroes (2021)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/New_Year:_%CF%89_Special_Heroes_(2021)",
+     "date": "2026-08-07",
+     "date_kind": "last revision of the page"
+    }
+   ],
+   "sample": "3 banners of Jan and Feb 2026",
+   "note": "January 2026 rates verified on two pages. The February revival entry differs and is kept as a variant only."
+  },
+  {
+   "type": "A Hero Rises",
+   "description": "After the yearly A Hero Rises vote: the top heroes of the vote, with no other 5-star heroes.",
+   "rates": {
+    "focus5": 6,
+    "other5": 0,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 57,
+    "star3": 34
+   },
+   "rates_variants": [],
+   "rate_rise": "standard_no_other",
+   "free_pick": {
+    "who": "not_listed",
+    "after_summons": null,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "The official table of events with a free 5-star summon does not name this event type. Show no free pick unless the banner's own details screen offers one."
+   },
+   "verdict": {
+    "rule": "worth_orbs_if_wanted",
+    "text": "The year's most popular heroes at 6% with no other 5-stars. Worth orbs when a color holds two you lack.",
+    "conditions": [
+     "a color holds heroes new for the player"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Double AHR: Top Eight (2026)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Double_AHR:_Top_Eight_(2026)",
+     "date": "2026-02-24",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"GW: A Hero Rises: Next Six (2026)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/GW:_A_Hero_Rises:_Next_Six_(2026)",
+     "date": "2026-04-24",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "2 banners (Feb and Apr 2026)",
+   "note": null
+  },
+  {
+   "type": "Hero Fest",
+   "description": "Four popular 5-star heroes at a raised focus rate, with other 5-star heroes still in the pool.",
+   "rates": {
+    "focus5": 5,
+    "other5": 3,
+    "focus4": null,
+    "special4": 3,
+    "special4_shsr": null,
+    "star4": 55,
+    "star3": 34
+   },
+   "rates_variants": [],
+   "rate_rise": "standard",
+   "free_pick": {
+    "who": "feh_pass",
+    "after_summons": 40,
+    "times": null,
+    "needs_in_game_check": false,
+    "note": "Feh Pass only."
+   },
+   "verdict": {
+    "rule": "worth_orbs_if_wanted",
+    "text": "5% focus over four strong heroes of the past year. Good when two or more are new for you; without Feh Pass there is no free pick, so set a limit.",
+    "conditions": [
+     "2 or more focus heroes new for the player"
+    ]
+   },
+   "verified": true,
+   "sources": [
+    {
+     "title": "Fire Emblem Heroes Wiki, banner page \"Focus: Hero Fest (Aug 2026)\" (rates box)",
+     "url": "https://feheroes.fandom.com/wiki/Focus:_Hero_Fest_(Aug_2026)",
+     "date": "2026-08-02",
+     "date_kind": "last revision of the page"
+    },
+    {
+     "title": "Official Feh Pass page, table of events with the free 5-star summon",
+     "url": "https://fehpass.fire-emblem-heroes.com/en-GB/system/",
+     "date": "2026-11-15",
+     "date_kind": "read on this day; the page itself carries no date"
+    }
+   ],
+   "sample": "1 banner",
+   "note": null
+  }
+ ]
+}

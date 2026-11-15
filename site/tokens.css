@@ -1,0 +1,103 @@
+/* Heroes Companion: design tokens.
+   Colours were checked against real screenshots of the game's interface (stat screen, trait menu, summon screen,
+   hero menu): the game is teal on deep navy with pale cyan light lines, pale stone title plates, pale yellow stat
+   numbers and gold trim. The first proposal (navy blue, hue about 210) was shifted towards teal (hue about 195).
+   Contrast ratios are listed in reviews/round2/design.md and recomputed by preview/_tools/contrast.py. */
+
+@font-face { font-family: "Cinzel"; src: url("fonts/cinzel-latin-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Cinzel"; src: url("fonts/cinzel-latin-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Nunito Sans"; src: url("fonts/nunito-sans-latin-var.woff2") format("woff2"); font-weight: 200 1000; font-style: normal; font-display: swap; }
+
+:root {
+  /* ---- surfaces ---- */
+  --bg-0: #03111B;          /* page base, bottom */
+  --bg-1: #06202F;          /* page base, top */
+  --panel: #0A2B3B;         /* standard panel fill */
+  --panel-hi: #114558;      /* raised fill, plate rows, inputs */
+  --panel-lo: #051A26;      /* wells, bar tracks */
+  --teal-700: #0B4658;      /* title bar bottom */
+  --teal-500: #0C5D73;      /* title bar top, secondary button */
+  --teal-300: #74D7E6;      /* links, focus ring, light lines */
+  --line: #1D5063;          /* decorative hairline inside panels */
+  --edge: #4E8FA5;          /* control boundary: at least 3:1 on panel and page */
+
+  /* ---- gold ---- */
+  --gold-100: #FFF4C8;
+  --gold-300: #F3D98B;
+  --gold-500: #D9AC4A;
+  --gold-700: #8A6220;
+  --gold-ink: #1C1304;
+  --gold-grad: linear-gradient(180deg, #FFF4C8 0%, #F3D98B 18%, #D9AC4A 55%, #8A6220 100%);
+  --stat: #F7EFA0;          /* the game's pale yellow stat numbers */
+
+  /* ---- stone and parchment ---- */
+  --stone-100: #D6DBD1;     /* title plate */
+  --stone-300: #A7B2AB;
+  --stone-ink: #10222C;
+  --parch-100: #F2E8CF;
+  --parch-300: #DCC9A0;
+  --parch-ink: #33240F;
+  --parch-head: #6B4A14;
+
+  /* ---- text ---- */
+  --text: #F1F6F8;
+  --text-dim: #A9C2CE;
+
+  /* ---- the four weapon colours: fill / text on dark ---- */
+  --red: #D43A4E;    --red-hi: #FF9FA8;
+  --blue: #2A6FD3;   --blue-hi: #93C0FC;
+  --green: #218A47;  --green-hi: #7FDE99;
+  --grey: #6F7B88;   --grey-hi: #D3DAE1;
+
+  /* ---- states ---- */
+  --ok: #55D197;
+  --warn: #F4AE45;
+  --bad: #FF9090;
+  --violet: #DB98E6;
+  --boon: #86CBFF;
+  --bane: #FF9FA8;
+  --r5: #F5C84B; --r4: #CBD5E1; --r3: #C98A52;
+
+  /* ---- stat bar gradients ---- */
+  --bar-hp: linear-gradient(90deg, #B83A48, #E46A6A);
+  --bar-atk: linear-gradient(90deg, #D0802A, #F2B45A);
+  --bar-spd: linear-gradient(90deg, #2FA354, #6FD99A);
+  --bar-def: linear-gradient(90deg, #B8962E, #E6CF6A);
+  --bar-res: linear-gradient(90deg, #2F74DB, #7FB6F5);
+
+  /* ---- type ---- */
+  --font-display: "Cinzel", "Trajan Pro", Georgia, "Times New Roman", serif;
+  --font-text: "Nunito Sans", "Segoe UI", Roboto, system-ui, -apple-system, sans-serif;
+  --fs-h1: 28px;    --lh-h1: 34px;
+  --fs-title: 15px; --lh-title: 20px;   /* panel titles, Cinzel, uppercase */
+  --fs-name: 24px;  --lh-name: 28px;
+  --fs-body: 16px;  --lh-body: 24px;
+  --fs-small: 14px; --lh-small: 20px;
+  --fs-micro: 12px; --lh-micro: 16px;
+  --fs-stat: 20px;  --lh-stat: 24px;
+  --fs-big: 40px;   --lh-big: 44px;
+
+  /* ---- spacing, radius ---- */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px; --s8: 64px;
+  --r-sm: 4px; --r-md: 8px; --r-lg: 12px; --r-pill: 999px;
+  --content: 1200px;
+  --bar-top: 64px;
+  --bar-bottom: 64px;
+  --tap: 44px;
+
+  /* ---- elevation ---- */
+  --shadow-1: 0 1px 0 rgba(255,255,255,.06) inset, 0 2px 6px rgba(0,0,0,.35);
+  --shadow-2: 0 1px 0 rgba(255,255,255,.08) inset, 0 8px 24px rgba(0,0,0,.45);
+  --glow-teal: 0 0 12px rgba(116,215,230,.45);
+
+  /* ---- motion ---- */
+  --t-instant: 90ms; --t-fast: 150ms; --t-base: 220ms; --t-slow: 360ms; --t-show: 600ms; --t-epic: 900ms;
+  --e-out: cubic-bezier(.16,1,.3,1);
+  --e-inout: cubic-bezier(.65,0,.35,1);
+  --e-in: cubic-bezier(.4,0,1,1);
+  --e-back: cubic-bezier(.34,1.56,.64,1);
+}
+
+@media (max-width: 899px) {
+  :root { --fs-h1: 24px; --lh-h1: 30px; --bar-top: 52px; }
+}
